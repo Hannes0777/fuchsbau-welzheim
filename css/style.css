@@ -325,11 +325,12 @@ p:last-child { margin-bottom: 0; }
   .page-banner { aspect-ratio: 4/3; }
 }
 
-/* ── Fuchs-Trennlinie ──────────────────────────────────────────
-   Ein einzelner, handgezeichneter sitzender Fuchs genau am Übergang
-   zwischen Hero-Foto und Trust-Bar. */
-.fox-divider { width: 100%; padding: 8px 0; background: var(--color-stone-200); color: var(--color-fox); display: flex; justify-content: center; align-items: center; }
-.fox-divider__icon { height: 46px; width: auto; }
+/* ── Wellen-Trennlinie ─────────────────────────────────────────
+   Sanfte Welle statt einer harten geraden Kante zwischen Hero-Foto
+   und Trust-Bar. */
+.wave-divider { width: 100%; line-height: 0; }
+.wave-divider svg { display: block; width: 100%; height: 34px; }
+.wave-divider path { fill: var(--color-stone-200); }
 
 /* ── Trust Bar ───────────────────────────────────────────────── */
 /* Bewusst HELL statt dunkel direkt nach dem dunklen Hero — sonst
