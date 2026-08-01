@@ -326,11 +326,10 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* ── Fuchs-Trennlinie ──────────────────────────────────────────
-   Kleine, sich wiederholende Fuchs-Silhouetten als Übergang zwischen
-   Hero-Foto und Trust-Bar — eine Reihe SVG-Pattern statt eines
-   generischen geraden Randes. */
-.fox-divider { width: 100%; height: 32px; background: var(--color-stone-200); color: var(--color-fox); overflow: hidden; }
-.fox-divider svg { display: block; }
+   Ein einzelner Fuchs (echtes Logo-Foto) genau am Übergang zwischen
+   Hero-Foto und Trust-Bar. */
+.fox-divider { width: 100%; padding: 10px 0; background: var(--color-stone-200); display: flex; justify-content: center; align-items: center; }
+.fox-divider__icon { height: 34px; width: auto; }
 
 /* ── Trust Bar ───────────────────────────────────────────────── */
 /* Bewusst HELL statt dunkel direkt nach dem dunklen Hero — sonst
