@@ -326,10 +326,10 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* ── Fuchs-Trennlinie ──────────────────────────────────────────
-   Ein einzelner Fuchs (echtes Logo-Foto) genau am Übergang zwischen
-   Hero-Foto und Trust-Bar. */
-.fox-divider { width: 100%; padding: 10px 0; background: var(--color-stone-200); display: flex; justify-content: center; align-items: center; }
-.fox-divider__icon { height: 34px; width: auto; }
+   Ein einzelner, handgezeichneter sitzender Fuchs genau am Übergang
+   zwischen Hero-Foto und Trust-Bar. */
+.fox-divider { width: 100%; padding: 8px 0; background: var(--color-stone-200); color: var(--color-fox); display: flex; justify-content: center; align-items: center; }
+.fox-divider__icon { height: 46px; width: auto; }
 
 /* ── Trust Bar ───────────────────────────────────────────────── */
 /* Bewusst HELL statt dunkel direkt nach dem dunklen Hero — sonst
