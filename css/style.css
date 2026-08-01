@@ -1,25 +1,26 @@
 /* ============================================================
    Garten- und Landschaftsbau Philip Fuchs – style.css
-   Dunkles, premium wirkendes Design: Tannengrün/Anthrazit als
-   Basis, Fuchsrot nur als scharfer, sparsam eingesetzter Akzent.
-   Reines CSS, kein Framework. Kleine, zurückhaltende Animationen.
+   Dunkles, premium wirkendes Design: neutrales warmes Anthrazit/
+   Schwarz als Basis (bewusst NICHT grün-getönt), Gold als scharfer,
+   sparsam eingesetzter Akzent. Reines CSS, kein Framework.
    ============================================================ */
 
 /* ── Custom Properties / Design Tokens ──────────────────────── */
 :root {
-  /* Farben: dunkles Tannengrün/Anthrazit als Basis, Fuchsrot als Akzent */
-  --color-bg: #101a10;            /* Seiten-Grundton */
-  --color-bg-alt: #17231a;        /* alternierende Sections */
-  --color-bg-deep: #0a0f0a;       /* tiefste Bänder (Zitat, Footer, Hero-Panels) */
-  --color-surface: #1e2b1f;       /* Card-/Panel-Flächen, Icon-Kreise, Pills */
-  --color-surface-hover: #263a28;
+  /* Farben: neutrales warmes Anthrazit/Schwarz als Basis, Gold als Akzent */
+  --color-bg: #16130f;            /* Seiten-Grundton */
+  --color-bg-alt: #1e1a15;        /* alternierende Sections */
+  --color-bg-deep: #0b0a08;       /* tiefste Bänder (Zitat, Footer, Hero-Panels) */
+  --color-surface: #241f18;       /* Card-/Panel-Flächen, Icon-Kreise, Pills */
+  --color-surface-hover: #2d271d;
   --color-heading: #faf6ec;       /* Überschriften, sehr helles Warmweiß */
   --color-ink: #f1ece0;           /* Fließtext */
   --color-ink-soft: rgba(241, 236, 224, 0.68); /* gedämpfter Fließtext */
   --color-white: #ffffff;
-  --color-fox: #e2762d;
-  --color-fox-light: #f2a563;
-  --color-fox-dark: #b85c1e;
+  --color-fox: #d9a441;
+  --color-fox-light: #f0c168;
+  --color-fox-dark: #a97b2c;
+  --color-on-fox: #211a0e;        /* dunkler Text auf goldenem Grund (Kontrast!) */
   --color-border: rgba(241, 236, 224, 0.14);
   --color-border-light: rgba(241, 236, 224, 0.22);
 
@@ -116,7 +117,7 @@ p:last-child { margin-bottom: 0; }
   line-height: 1.1;
 }
 .btn:active { transform: translateY(1px); }
-.btn--primary { background: var(--color-fox); color: var(--color-white); }
+.btn--primary { background: var(--color-fox); color: var(--color-on-fox); }
 .btn--primary:hover { background: var(--color-fox-light); }
 .btn--outline { background: transparent; border-color: currentColor; color: inherit; }
 .btn--outline:hover { background: rgba(255, 255, 255, 0.08); }
@@ -266,7 +267,7 @@ p:last-child { margin-bottom: 0; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(8,12,8,0.6) 0%, rgba(8,12,8,0.88) 100%);
+  background: linear-gradient(180deg, rgba(11,10,8,0.6) 0%, rgba(11,10,8,0.88) 100%);
 }
 .page-hero-full__content { position: relative; padding: 56px 0; max-width: 760px; }
 .page-hero-full h1 { color: var(--color-white); }
@@ -282,7 +283,7 @@ p:last-child { margin-bottom: 0; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(10,15,10,0.38) 0%, rgba(10,15,10,0.65) 55%, rgba(8,12,8,0.94) 100%);
+  background: linear-gradient(180deg, rgba(14,12,10,0.38) 0%, rgba(14,12,10,0.65) 55%, rgba(11,10,8,0.94) 100%);
 }
 .hero-full__content { position: relative; padding: 64px 0 72px; max-width: 760px; }
 .hero-full h1 { color: var(--color-white); }
@@ -293,7 +294,7 @@ p:last-child { margin-bottom: 0; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(8,12,8,0.1) 0%, rgba(8,12,8,0.82) 100%);
+  background: linear-gradient(180deg, rgba(11,10,8,0.1) 0%, rgba(11,10,8,0.82) 100%);
 }
 .home-hero__content { position: relative; padding: 40px 0; }
 .home-hero h1 { color: var(--color-white); margin: 0; }
@@ -421,7 +422,7 @@ p:last-child { margin-bottom: 0; }
   display: none;
   align-items: center;
   justify-content: center;
-  background: rgba(6, 9, 6, 0.94);
+  background: rgba(9, 8, 7, 0.94);
   padding: 40px;
 }
 .lightbox.is-open { display: flex; }
@@ -458,7 +459,7 @@ p:last-child { margin-bottom: 0; }
   white-space: nowrap;
   transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
-.subnav__link:hover, .subnav__link.is-active { background: var(--color-fox); border-color: var(--color-fox); color: var(--color-white); }
+.subnav__link:hover, .subnav__link.is-active { background: var(--color-fox); border-color: var(--color-fox); color: var(--color-on-fox); }
 @media (max-width: 640px) { .subnav__list { flex-wrap: nowrap; overflow-x: auto; padding: 12px 0; } }
 
 .service-block { padding: 56px 0; border-bottom: 1px solid var(--color-border); scroll-margin-top: calc(var(--nav-height) + 60px); }
@@ -592,7 +593,7 @@ p:last-child { margin-bottom: 0; }
   left: -9999px;
   top: 0;
   background: var(--color-fox);
-  color: var(--color-white);
+  color: var(--color-on-fox);
   padding: 12px 20px;
   z-index: 2000;
   font-weight: 700;
